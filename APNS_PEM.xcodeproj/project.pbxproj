@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9903379191C6C0200B360F4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9903378191C6C0200B360F4 /* Cocoa.framework */; };
+		E9903383191C6C0200B360F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9903381191C6C0200B360F4 /* InfoPlist.strings */; };
+		E9903385191C6C0200B360F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9903384191C6C0200B360F4 /* main.m */; };
+		E9903389191C6C0200B360F4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E9903387191C6C0200B360F4 /* Credits.rtf */; };
+		E990338C191C6C0200B360F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E990338B191C6C0200B360F4 /* AppDelegate.m */; };
+		E990338F191C6C0200B360F4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E990338D191C6C0200B360F4 /* MainMenu.xib */; };
+		E9903391191C6C0200B360F4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9903390191C6C0200B360F4 /* Images.xcassets */; };
+		E9903398191C6C0200B360F4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9903397191C6C0200B360F4 /* XCTest.framework */; };
+		E9903399191C6C0200B360F4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9903378191C6C0200B360F4 /* Cocoa.framework */; };
+		E99033A1191C6C0200B360F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E990339F191C6C0200B360F4 /* InfoPlist.strings */; };
+		E99033A3191C6C0200B360F4 /* APNS_PEMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E99033A2191C6C0200B360F4 /* APNS_PEMTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E990339A191C6C0200B360F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E990336D191C6C0200B360F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9903374191C6C0200B360F4;
+			remoteInfo = APNS_PEM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E9903375191C6C0200B360F4 /* APNS_PEM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APNS_PEM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9903378191C6C0200B360F4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E990337B191C6C0200B360F4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		E990337C191C6C0200B360F4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E990337D191C6C0200B360F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E9903380191C6C0200B360F4 /* APNS_PEM-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "APNS_PEM-Info.plist"; sourceTree = "<group>"; };
+		E9903382191C6C0200B360F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E9903384191C6C0200B360F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9903386191C6C0200B360F4 /* APNS_PEM-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APNS_PEM-Prefix.pch"; sourceTree = "<group>"; };
+		E9903388191C6C0200B360F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		E990338A191C6C0200B360F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E990338B191C6C0200B360F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E990338E191C6C0200B360F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E9903390191C6C0200B360F4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E9903396191C6C0200B360F4 /* APNS_PEMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APNS_PEMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9903397191C6C0200B360F4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E990339E191C6C0200B360F4 /* APNS_PEMTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "APNS_PEMTests-Info.plist"; sourceTree = "<group>"; };
+		E99033A0191C6C0200B360F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E99033A2191C6C0200B360F4 /* APNS_PEMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APNS_PEMTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9903372191C6C0200B360F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9903379191C6C0200B360F4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9903393191C6C0200B360F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9903399191C6C0200B360F4 /* Cocoa.framework in Frameworks */,
+				E9903398191C6C0200B360F4 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E990336C191C6C0200B360F4 = {
+			isa = PBXGroup;
+			children = (
+				E990337E191C6C0200B360F4 /* APNS_PEM */,
+				E990339C191C6C0200B360F4 /* APNS_PEMTests */,
+				E9903377191C6C0200B360F4 /* Frameworks */,
+				E9903376191C6C0200B360F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9903376191C6C0200B360F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9903375191C6C0200B360F4 /* APNS_PEM.app */,
+				E9903396191C6C0200B360F4 /* APNS_PEMTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9903377191C6C0200B360F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9903378191C6C0200B360F4 /* Cocoa.framework */,
+				E9903397191C6C0200B360F4 /* XCTest.framework */,
+				E990337A191C6C0200B360F4 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E990337A191C6C0200B360F4 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E990337B191C6C0200B360F4 /* AppKit.framework */,
+				E990337C191C6C0200B360F4 /* CoreData.framework */,
+				E990337D191C6C0200B360F4 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		E990337E191C6C0200B360F4 /* APNS_PEM */ = {
+			isa = PBXGroup;
+			children = (
+				E990338A191C6C0200B360F4 /* AppDelegate.h */,
+				E990338B191C6C0200B360F4 /* AppDelegate.m */,
+				E990338D191C6C0200B360F4 /* MainMenu.xib */,
+				E9903390191C6C0200B360F4 /* Images.xcassets */,
+				E990337F191C6C0200B360F4 /* Supporting Files */,
+			);
+			path = APNS_PEM;
+			sourceTree = "<group>";
+		};
+		E990337F191C6C0200B360F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9903380191C6C0200B360F4 /* APNS_PEM-Info.plist */,
+				E9903381191C6C0200B360F4 /* InfoPlist.strings */,
+				E9903384191C6C0200B360F4 /* main.m */,
+				E9903386191C6C0200B360F4 /* APNS_PEM-Prefix.pch */,
+				E9903387191C6C0200B360F4 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E990339C191C6C0200B360F4 /* APNS_PEMTests */ = {
+			isa = PBXGroup;
+			children = (
+				E99033A2191C6C0200B360F4 /* APNS_PEMTests.m */,
+				E990339D191C6C0200B360F4 /* Supporting Files */,
+			);
+			path = APNS_PEMTests;
+			sourceTree = "<group>";
+		};
+		E990339D191C6C0200B360F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E990339E191C6C0200B360F4 /* APNS_PEMTests-Info.plist */,
+				E990339F191C6C0200B360F4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9903374191C6C0200B360F4 /* APNS_PEM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E99033A6191C6C0200B360F4 /* Build configuration list for PBXNativeTarget "APNS_PEM" */;
+			buildPhases = (
+				E9903371191C6C0200B360F4 /* Sources */,
+				E9903372191C6C0200B360F4 /* Frameworks */,
+				E9903373191C6C0200B360F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APNS_PEM;
+			productName = APNS_PEM;
+			productReference = E9903375191C6C0200B360F4 /* APNS_PEM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9903395191C6C0200B360F4 /* APNS_PEMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E99033A9191C6C0200B360F4 /* Build configuration list for PBXNativeTarget "APNS_PEMTests" */;
+			buildPhases = (
+				E9903392191C6C0200B360F4 /* Sources */,
+				E9903393191C6C0200B360F4 /* Frameworks */,
+				E9903394191C6C0200B360F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E990339B191C6C0200B360F4 /* PBXTargetDependency */,
+			);
+			name = APNS_PEMTests;
+			productName = APNS_PEMTests;
+			productReference = E9903396191C6C0200B360F4 /* APNS_PEMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E990336D191C6C0200B360F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Akira Matsuda";
+				TargetAttributes = {
+					E9903395191C6C0200B360F4 = {
+						TestTargetID = E9903374191C6C0200B360F4;
+					};
+				};
+			};
+			buildConfigurationList = E9903370191C6C0200B360F4 /* Build configuration list for PBXProject "APNS_PEM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E990336C191C6C0200B360F4;
+			productRefGroup = E9903376191C6C0200B360F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9903374191C6C0200B360F4 /* APNS_PEM */,
+				E9903395191C6C0200B360F4 /* APNS_PEMTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9903373191C6C0200B360F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9903383191C6C0200B360F4 /* InfoPlist.strings in Resources */,
+				E9903391191C6C0200B360F4 /* Images.xcassets in Resources */,
+				E9903389191C6C0200B360F4 /* Credits.rtf in Resources */,
+				E990338F191C6C0200B360F4 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9903394191C6C0200B360F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99033A1191C6C0200B360F4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9903371191C6C0200B360F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E990338C191C6C0200B360F4 /* AppDelegate.m in Sources */,
+				E9903385191C6C0200B360F4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9903392191C6C0200B360F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99033A3191C6C0200B360F4 /* APNS_PEMTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E990339B191C6C0200B360F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9903374191C6C0200B360F4 /* APNS_PEM */;
+			targetProxy = E990339A191C6C0200B360F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E9903381191C6C0200B360F4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9903382191C6C0200B360F4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E9903387191C6C0200B360F4 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9903388191C6C0200B360F4 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		E990338D191C6C0200B360F4 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E990338E191C6C0200B360F4 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		E990339F191C6C0200B360F4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E99033A0191C6C0200B360F4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E99033A4191C6C0200B360F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E99033A5191C6C0200B360F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E99033A7191C6C0200B360F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "APNS_PEM/APNS_PEM-Prefix.pch";
+				INFOPLIST_FILE = "APNS_PEM/APNS_PEM-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E99033A8191C6C0200B360F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "APNS_PEM/APNS_PEM-Prefix.pch";
+				INFOPLIST_FILE = "APNS_PEM/APNS_PEM-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E99033AA191C6C0200B360F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/APNS_PEM.app/Contents/MacOS/APNS_PEM";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "APNS_PEM/APNS_PEM-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "APNS_PEMTests/APNS_PEMTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E99033AB191C6C0200B360F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/APNS_PEM.app/Contents/MacOS/APNS_PEM";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "APNS_PEM/APNS_PEM-Prefix.pch";
+				INFOPLIST_FILE = "APNS_PEMTests/APNS_PEMTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9903370191C6C0200B360F4 /* Build configuration list for PBXProject "APNS_PEM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E99033A4191C6C0200B360F4 /* Debug */,
+				E99033A5191C6C0200B360F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E99033A6191C6C0200B360F4 /* Build configuration list for PBXNativeTarget "APNS_PEM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E99033A7191C6C0200B360F4 /* Debug */,
+				E99033A8191C6C0200B360F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E99033A9191C6C0200B360F4 /* Build configuration list for PBXNativeTarget "APNS_PEMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E99033AA191C6C0200B360F4 /* Debug */,
+				E99033AB191C6C0200B360F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E990336D191C6C0200B360F4 /* Project object */;
+}
