@@ -7,6 +7,7 @@
 //
 
 #import "APNSController.h"
+#import "APNSPopoverViewController.h"
 
 @implementation APNSController
 
@@ -101,7 +102,7 @@
 							  [NSString stringWithFormat:@"cat aps_cert.pem aps_key.pem > %@/aps_ck_%@_%@.pem", [destinationPathTextField_ stringValue], suffix, @[@"dev", @"prod"][index]],
 							  @"rm aps_cert.pem && rm aps_key.pem"
 							  ];
-		BOOL *success;
+		__block BOOL success;
 		[commands enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
 			NSString *cmd = obj;
 			int res = system(cmd.UTF8String);
@@ -109,19 +110,50 @@
 				NSBeginAlertSheet(@"Error", @"OK", nil, nil, window_, nil, nil, nil, nil, @"Could not create pem file.(%ld%d)", idx, res);
 				system("rm aps_key.pem");
 				*stop = YES;
-				*success = NO;
+				success = NO;
 			}
 			else {
-				*success = YES;
+				success = YES;
 			}
 		}];
-		if (*success) {
+		if (success) {
 			NSAlert *alert = [NSAlert alertWithMessageText:@"Success" defaultButton:@"OK" alternateButton:nil otherButton:nil informativeTextWithFormat:@"pem file is generated."];
 			[alert setAlertStyle:NSInformationalAlertStyle];
 			[alert beginSheetModalForWindow:window_ modalDelegate:nil didEndSelector:nil contextInfo:nil];
 			[[NSWorkspace sharedWorkspace] activateFileViewerSelectingURLs:@[[NSURL fileURLWithPath:[destinationPathTextField_ stringValue]]]];
 		}
 	}
+}
+
+BOOL showingPopover;
+static NSMutableArray *popoverArray;
+- (IBAction)showHelp:(id)sender
+{
+	if (popoverArray == nil) {
+		popoverArray = [NSMutableArray new];
+		NSPopover *popover = [[NSPopover alloc] init];
+		popover.contentViewController = [[APNSPopoverViewController alloc] initWithText:@"Password for exported p12 file from Keychain Access."];
+		[popoverArray addObject:popover];
+		NSPopover *popover2 = [[NSPopover alloc] init];
+		popover2.contentViewController = [[APNSPopoverViewController alloc] initWithText:@"Password for pem file which will be generated."];
+		[popoverArray addObject:popover2];
+	}
+	
+	if (showingPopover) {
+		[popoverArray enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+			NSPopover *popover = obj;
+			[popover close];
+		}];
+	}
+	else {
+		NSArray *textFieldArray = @[importPasswordTextField_, pemPassPhraseTextField_];
+		[popoverArray enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+			NSPopover *popover = obj;
+			[popover showRelativeToRect:[textFieldArray[idx] bounds] ofView:textFieldArray[idx] preferredEdge:NSMinXEdge];
+		}];
+	}
+	
+	showingPopover = !showingPopover;
 }
 
 @end

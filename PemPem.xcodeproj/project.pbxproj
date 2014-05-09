@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E95C8F3E191D3E7F00DE52D7 /* APNSPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95C8F3D191D3E7F00DE52D7 /* APNSPopoverViewController.m */; };
 		E9903379191C6C0200B360F4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9903378191C6C0200B360F4 /* Cocoa.framework */; };
 		E9903383191C6C0200B360F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9903381191C6C0200B360F4 /* InfoPlist.strings */; };
 		E9903385191C6C0200B360F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9903384191C6C0200B360F4 /* main.m */; };
@@ -33,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		E939E47A191D1CB300B50D70 /* PemPem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PemPem.entitlements; sourceTree = "<group>"; };
+		E95C8F3C191D3E7F00DE52D7 /* APNSPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APNSPopoverViewController.h; sourceTree = "<group>"; };
+		E95C8F3D191D3E7F00DE52D7 /* APNSPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APNSPopoverViewController.m; sourceTree = "<group>"; };
 		E9903375191C6C0200B360F4 /* PemPem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PemPem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9903378191C6C0200B360F4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E990337B191C6C0200B360F4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -124,6 +127,8 @@
 				E990338B191C6C0200B360F4 /* AppDelegate.m */,
 				E99033AF191C6D2B00B360F4 /* APNSController.h */,
 				E99033B0191C6D2B00B360F4 /* APNSController.m */,
+				E95C8F3C191D3E7F00DE52D7 /* APNSPopoverViewController.h */,
+				E95C8F3D191D3E7F00DE52D7 /* APNSPopoverViewController.m */,
 				E990338D191C6C0200B360F4 /* MainMenu.xib */,
 				E9903390191C6C0200B360F4 /* Images.xcassets */,
 				E990337F191C6C0200B360F4 /* Supporting Files */,
@@ -269,6 +274,7 @@
 			files = (
 				E990338C191C6C0200B360F4 /* AppDelegate.m in Sources */,
 				E99033B1191C6D2B00B360F4 /* APNSController.m in Sources */,
+				E95C8F3E191D3E7F00DE52D7 /* APNSPopoverViewController.m in Sources */,
 				E9903385191C6C0200B360F4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

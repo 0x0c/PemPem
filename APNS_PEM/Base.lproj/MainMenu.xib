@@ -222,12 +222,29 @@
                             <menu key="menu" title="OtherViews" id="qmX-Xy-wt6"/>
                         </popUpButtonCell>
                     </popUpButton>
+                    <button appearanceType="aqua" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VLr-6n-M8g">
+                        <rect key="frame" x="18" y="17" width="25" height="25"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="M5P-7O-93w"/>
+                            <constraint firstAttribute="width" constant="21" id="sd3-4j-iZq"/>
+                        </constraints>
+                        <buttonCell key="cell" type="help" bezelStyle="helpButton" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="iBU-2K-sq5">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="showHelp:" target="eF9-A5-mua" id="asa-zK-vzS"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="U6O-iC-dWB" firstAttribute="trailing" secondItem="mLH-iV-2pw" secondAttribute="trailing" id="2qX-Ev-ApO"/>
+                    <constraint firstItem="VLr-6n-M8g" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="4Vz-p6-kB3"/>
                     <constraint firstItem="lUd-tA-olo" firstAttribute="leading" secondItem="tW6-Hw-Xqg" secondAttribute="trailing" constant="8" id="4uD-7D-LOb"/>
                     <constraint firstAttribute="bottom" secondItem="YQO-Sl-7Wx" secondAttribute="bottom" constant="20" id="6bP-mi-Qse"/>
                     <constraint firstItem="vgq-5w-gKB" firstAttribute="top" secondItem="U6O-iC-dWB" secondAttribute="bottom" constant="9" id="7tx-wa-rba"/>
+                    <constraint firstAttribute="bottom" secondItem="VLr-6n-M8g" secondAttribute="bottom" constant="20" id="8fq-Zf-9w9"/>
                     <constraint firstItem="tW6-Hw-Xqg" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="BMY-rg-mgE"/>
                     <constraint firstAttribute="trailing" secondItem="YQO-Sl-7Wx" secondAttribute="trailing" constant="20" id="DBd-I2-7na"/>
                     <constraint firstItem="91c-tS-icr" firstAttribute="top" secondItem="mLH-iV-2pw" secondAttribute="bottom" constant="8" id="EdS-lV-4bC"/>

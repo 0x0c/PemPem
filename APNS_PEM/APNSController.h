@@ -25,5 +25,6 @@
 - (IBAction)selectP12:(id)sender;
 - (IBAction)selectDestinationPath:(id)sender;
 - (IBAction)createPEM:(id)sender;
+- (IBAction)showHelp:(id)sender;
 
 @end
