@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E9903374191C6C0200B360F4"
-               BuildableName = "APNS_PEM.app"
-               BlueprintName = "APNS_PEM"
-               ReferencedContainer = "container:APNS_PEM.xcodeproj">
+               BuildableName = "PemPem.app"
+               BlueprintName = "PemPem"
+               ReferencedContainer = "container:PemPem.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E9903395191C6C0200B360F4"
-               BuildableName = "APNS_PEMTests.xctest"
-               BlueprintName = "APNS_PEMTests"
-               ReferencedContainer = "container:APNS_PEM.xcodeproj">
+               BuildableName = "PemPemTests.xctest"
+               BlueprintName = "PemPemTests"
+               ReferencedContainer = "container:PemPem.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E9903374191C6C0200B360F4"
-            BuildableName = "APNS_PEM.app"
-            BlueprintName = "APNS_PEM"
-            ReferencedContainer = "container:APNS_PEM.xcodeproj">
+            BuildableName = "PemPem.app"
+            BlueprintName = "PemPem"
+            ReferencedContainer = "container:PemPem.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E9903374191C6C0200B360F4"
-            BuildableName = "APNS_PEM.app"
-            BlueprintName = "APNS_PEM"
-            ReferencedContainer = "container:APNS_PEM.xcodeproj">
+            BuildableName = "PemPem.app"
+            BlueprintName = "PemPem"
+            ReferencedContainer = "container:PemPem.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E9903374191C6C0200B360F4"
-            BuildableName = "APNS_PEM.app"
-            BlueprintName = "APNS_PEM"
-            ReferencedContainer = "container:APNS_PEM.xcodeproj">
+            BuildableName = "PemPem.app"
+            BlueprintName = "PemPem"
+            ReferencedContainer = "container:PemPem.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

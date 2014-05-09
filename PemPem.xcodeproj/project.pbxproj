@@ -18,6 +18,7 @@
 		E9903399191C6C0200B360F4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9903378191C6C0200B360F4 /* Cocoa.framework */; };
 		E99033A1191C6C0200B360F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E990339F191C6C0200B360F4 /* InfoPlist.strings */; };
 		E99033A3191C6C0200B360F4 /* APNS_PEMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E99033A2191C6C0200B360F4 /* APNS_PEMTests.m */; };
+		E99033B1191C6D2B00B360F4 /* APNSController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99033B0191C6D2B00B360F4 /* APNSController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,25 +32,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E9903375191C6C0200B360F4 /* APNS_PEM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APNS_PEM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E939E47A191D1CB300B50D70 /* PemPem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PemPem.entitlements; sourceTree = "<group>"; };
+		E9903375191C6C0200B360F4 /* PemPem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PemPem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9903378191C6C0200B360F4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E990337B191C6C0200B360F4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		E990337C191C6C0200B360F4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		E990337D191C6C0200B360F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		E9903380191C6C0200B360F4 /* APNS_PEM-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "APNS_PEM-Info.plist"; sourceTree = "<group>"; };
+		E9903380191C6C0200B360F4 /* PemPem-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PemPem-Info.plist"; sourceTree = "<group>"; };
 		E9903382191C6C0200B360F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E9903384191C6C0200B360F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E9903386191C6C0200B360F4 /* APNS_PEM-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APNS_PEM-Prefix.pch"; sourceTree = "<group>"; };
+		E9903386191C6C0200B360F4 /* PemPem-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PemPem-Prefix.pch"; sourceTree = "<group>"; };
 		E9903388191C6C0200B360F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		E990338A191C6C0200B360F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E990338B191C6C0200B360F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E990338E191C6C0200B360F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E9903390191C6C0200B360F4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E9903396191C6C0200B360F4 /* APNS_PEMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APNS_PEMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9903396191C6C0200B360F4 /* PemPemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PemPemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9903397191C6C0200B360F4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		E990339E191C6C0200B360F4 /* APNS_PEMTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "APNS_PEMTests-Info.plist"; sourceTree = "<group>"; };
+		E990339E191C6C0200B360F4 /* PemPemTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PemPemTests-Info.plist"; sourceTree = "<group>"; };
 		E99033A0191C6C0200B360F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E99033A2191C6C0200B360F4 /* APNS_PEMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APNS_PEMTests.m; sourceTree = "<group>"; };
+		E99033AF191C6D2B00B360F4 /* APNSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APNSController.h; sourceTree = "<group>"; };
+		E99033B0191C6D2B00B360F4 /* APNSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APNSController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,7 @@
 		E990336C191C6C0200B360F4 = {
 			isa = PBXGroup;
 			children = (
+				E939E47A191D1CB300B50D70 /* PemPem.entitlements */,
 				E990337E191C6C0200B360F4 /* APNS_PEM */,
 				E990339C191C6C0200B360F4 /* APNS_PEMTests */,
 				E9903377191C6C0200B360F4 /* Frameworks */,
@@ -86,8 +91,8 @@
 		E9903376191C6C0200B360F4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E9903375191C6C0200B360F4 /* APNS_PEM.app */,
-				E9903396191C6C0200B360F4 /* APNS_PEMTests.xctest */,
+				E9903375191C6C0200B360F4 /* PemPem.app */,
+				E9903396191C6C0200B360F4 /* PemPemTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +122,8 @@
 			children = (
 				E990338A191C6C0200B360F4 /* AppDelegate.h */,
 				E990338B191C6C0200B360F4 /* AppDelegate.m */,
+				E99033AF191C6D2B00B360F4 /* APNSController.h */,
+				E99033B0191C6D2B00B360F4 /* APNSController.m */,
 				E990338D191C6C0200B360F4 /* MainMenu.xib */,
 				E9903390191C6C0200B360F4 /* Images.xcassets */,
 				E990337F191C6C0200B360F4 /* Supporting Files */,
@@ -127,10 +134,10 @@
 		E990337F191C6C0200B360F4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E9903380191C6C0200B360F4 /* APNS_PEM-Info.plist */,
+				E9903380191C6C0200B360F4 /* PemPem-Info.plist */,
 				E9903381191C6C0200B360F4 /* InfoPlist.strings */,
 				E9903384191C6C0200B360F4 /* main.m */,
-				E9903386191C6C0200B360F4 /* APNS_PEM-Prefix.pch */,
+				E9903386191C6C0200B360F4 /* PemPem-Prefix.pch */,
 				E9903387191C6C0200B360F4 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -148,7 +155,7 @@
 		E990339D191C6C0200B360F4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E990339E191C6C0200B360F4 /* APNS_PEMTests-Info.plist */,
+				E990339E191C6C0200B360F4 /* PemPemTests-Info.plist */,
 				E990339F191C6C0200B360F4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -157,9 +164,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E9903374191C6C0200B360F4 /* APNS_PEM */ = {
+		E9903374191C6C0200B360F4 /* PemPem */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E99033A6191C6C0200B360F4 /* Build configuration list for PBXNativeTarget "APNS_PEM" */;
+			buildConfigurationList = E99033A6191C6C0200B360F4 /* Build configuration list for PBXNativeTarget "PemPem" */;
 			buildPhases = (
 				E9903371191C6C0200B360F4 /* Sources */,
 				E9903372191C6C0200B360F4 /* Frameworks */,
@@ -169,14 +176,14 @@
 			);
 			dependencies = (
 			);
-			name = APNS_PEM;
+			name = PemPem;
 			productName = APNS_PEM;
-			productReference = E9903375191C6C0200B360F4 /* APNS_PEM.app */;
+			productReference = E9903375191C6C0200B360F4 /* PemPem.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E9903395191C6C0200B360F4 /* APNS_PEMTests */ = {
+		E9903395191C6C0200B360F4 /* PemPemTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E99033A9191C6C0200B360F4 /* Build configuration list for PBXNativeTarget "APNS_PEMTests" */;
+			buildConfigurationList = E99033A9191C6C0200B360F4 /* Build configuration list for PBXNativeTarget "PemPemTests" */;
 			buildPhases = (
 				E9903392191C6C0200B360F4 /* Sources */,
 				E9903393191C6C0200B360F4 /* Frameworks */,
@@ -187,9 +194,9 @@
 			dependencies = (
 				E990339B191C6C0200B360F4 /* PBXTargetDependency */,
 			);
-			name = APNS_PEMTests;
+			name = PemPemTests;
 			productName = APNS_PEMTests;
-			productReference = E9903396191C6C0200B360F4 /* APNS_PEMTests.xctest */;
+			productReference = E9903396191C6C0200B360F4 /* PemPemTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -201,12 +208,20 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Akira Matsuda";
 				TargetAttributes = {
+					E9903374191C6C0200B360F4 = {
+						DevelopmentTeam = 3VC35JGS33;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
 					E9903395191C6C0200B360F4 = {
 						TestTargetID = E9903374191C6C0200B360F4;
 					};
 				};
 			};
-			buildConfigurationList = E9903370191C6C0200B360F4 /* Build configuration list for PBXProject "APNS_PEM" */;
+			buildConfigurationList = E9903370191C6C0200B360F4 /* Build configuration list for PBXProject "PemPem" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -219,8 +234,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E9903374191C6C0200B360F4 /* APNS_PEM */,
-				E9903395191C6C0200B360F4 /* APNS_PEMTests */,
+				E9903374191C6C0200B360F4 /* PemPem */,
+				E9903395191C6C0200B360F4 /* PemPemTests */,
 			);
 		};
 /* End PBXProject section */
@@ -253,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E990338C191C6C0200B360F4 /* AppDelegate.m in Sources */,
+				E99033B1191C6D2B00B360F4 /* APNSController.m in Sources */,
 				E9903385191C6C0200B360F4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +286,7 @@
 /* Begin PBXTargetDependency section */
 		E990339B191C6C0200B360F4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E9903374191C6C0200B360F4 /* APNS_PEM */;
+			target = E9903374191C6C0200B360F4 /* PemPem */;
 			targetProxy = E990339A191C6C0200B360F4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -385,11 +401,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PemPem.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer: Akira Matsuda (F7D88ZNBFM)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "APNS_PEM/APNS_PEM-Prefix.pch";
-				INFOPLIST_FILE = "APNS_PEM/APNS_PEM-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "APNS_PEM/PemPem-Prefix.pch";
+				INFOPLIST_FILE = "APNS_PEM/PemPem-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = PemPem;
+				PROVISIONING_PROFILE = "BE4DAC6E-22A2-4C12-BAA4-3DE5627705E2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -398,11 +418,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PemPem.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Akira Matsuda (3VC35JGS33)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "APNS_PEM/APNS_PEM-Prefix.pch";
-				INFOPLIST_FILE = "APNS_PEM/APNS_PEM-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "APNS_PEM/PemPem-Prefix.pch";
+				INFOPLIST_FILE = "APNS_PEM/PemPem-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = PemPem;
+				PROVISIONING_PROFILE = "6A7620ED-FF97-4AB8-BFDD-20563BDB310A";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -422,8 +446,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "APNS_PEMTests/APNS_PEMTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "APNS_PEMTests/PemPemTests-Info.plist";
+				PRODUCT_NAME = PemPemTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -440,8 +464,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "APNS_PEM/APNS_PEM-Prefix.pch";
-				INFOPLIST_FILE = "APNS_PEMTests/APNS_PEMTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "APNS_PEMTests/PemPemTests-Info.plist";
+				PRODUCT_NAME = PemPemTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -450,7 +474,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E9903370191C6C0200B360F4 /* Build configuration list for PBXProject "APNS_PEM" */ = {
+		E9903370191C6C0200B360F4 /* Build configuration list for PBXProject "PemPem" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E99033A4191C6C0200B360F4 /* Debug */,
@@ -459,21 +483,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E99033A6191C6C0200B360F4 /* Build configuration list for PBXNativeTarget "APNS_PEM" */ = {
+		E99033A6191C6C0200B360F4 /* Build configuration list for PBXNativeTarget "PemPem" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E99033A7191C6C0200B360F4 /* Debug */,
 				E99033A8191C6C0200B360F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		E99033A9191C6C0200B360F4 /* Build configuration list for PBXNativeTarget "APNS_PEMTests" */ = {
+		E99033A9191C6C0200B360F4 /* Build configuration list for PBXNativeTarget "PemPemTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E99033AA191C6C0200B360F4 /* Debug */,
 				E99033AB191C6C0200B360F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
