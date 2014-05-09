@@ -11,6 +11,7 @@
 @interface APNSController : NSObject
 {
 	IBOutlet NSWindow *window_;
+	IBOutlet NSButton *createButton_;
 	IBOutlet NSTextField *cerTextField_;
 	IBOutlet NSTextField *p12TextField_;
 	IBOutlet NSTextField *suffixTextField_;

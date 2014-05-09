@@ -13,6 +13,7 @@
 - (void)awakeFromNib
 {
 	[popUpButton_ addItemsWithTitles:@[@"Development", @"Production"]];
+	[window_ setDefaultButtonCell:[createButton_ cell]];
 }
 
 - (IBAction)selectCer:(id)sender

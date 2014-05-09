@@ -66,7 +66,7 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="PemPem" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" appearanceType="lightContent" animationBehavior="default" id="QvC-M9-y7g">
+        <window title="PemPem" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" appearanceType="aqua" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -78,14 +78,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="700" height="260"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YQO-Sl-7Wx">
+                    <button focusRingType="exterior" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YQO-Sl-7Wx">
                         <rect key="frame" x="610" y="13" width="76" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="505-hT-wt5"/>
                             <constraint firstAttribute="width" constant="64" id="s7l-Ic-PGB"/>
                         </constraints>
-                        <buttonCell key="cell" type="push" title="Create" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GMe-Uz-JXq">
+                        <buttonCell key="cell" type="push" title="Create" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" focusRingType="exterior" imageScaling="proportionallyDown" inset="2" id="GMe-Uz-JXq">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -99,7 +99,7 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="22" id="mih-mr-UJZ"/>
                         </constraints>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Application name" drawsBackground="YES" id="xr2-0w-nb6">
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" placeholderString="Application name" drawsBackground="YES" usesSingleLineMode="YES" id="xr2-0w-nb6">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -111,7 +111,7 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="22" id="6Wc-vH-ceN"/>
                         </constraints>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="p12 file path" drawsBackground="YES" id="oFm-KU-yab">
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" placeholderString="p12 file path" drawsBackground="YES" usesSingleLineMode="YES" id="oFm-KU-yab">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -123,7 +123,7 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="22" id="PNo-gK-MNv"/>
                         </constraints>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="cer file path" drawsBackground="YES" id="WFb-17-gHn">
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" placeholderString="cer file path" drawsBackground="YES" usesSingleLineMode="YES" id="WFb-17-gHn">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -180,7 +180,7 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="22" id="UyZ-iW-Ngv"/>
                         </constraints>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Destination path" drawsBackground="YES" id="Kj9-6t-JmB">
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" placeholderString="Destination path" drawsBackground="YES" usesSingleLineMode="YES" id="Kj9-6t-JmB">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -192,13 +192,10 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="22" id="TBg-fb-PF2"/>
                         </constraints>
-                        <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="PEM pass phrase" drawsBackground="YES" usesSingleLineMode="YES" id="x4j-wf-ddq">
+                        <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="PEM pass phrase" drawsBackground="YES" usesSingleLineMode="YES" id="x4j-wf-ddq">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                            <allowedInputSourceLocales>
-                                <string>NSAllRomanInputSourcesLocaleIdentifier</string>
-                            </allowedInputSourceLocales>
                         </secureTextFieldCell>
                     </secureTextField>
                     <secureTextField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sgs-nE-UpM">
@@ -207,13 +204,10 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="22" id="5mU-XE-MBj"/>
                         </constraints>
-                        <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Import Password" drawsBackground="YES" usesSingleLineMode="YES" id="AfO-Rt-qcx">
+                        <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="Import Password" drawsBackground="YES" usesSingleLineMode="YES" id="AfO-Rt-qcx">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                            <allowedInputSourceLocales>
-                                <string>NSAllRomanInputSourcesLocaleIdentifier</string>
-                            </allowedInputSourceLocales>
                         </secureTextFieldCell>
                     </secureTextField>
                     <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="U6O-iC-dWB">
@@ -265,6 +259,7 @@
         <customObject id="eF9-A5-mua" customClass="APNSController">
             <connections>
                 <outlet property="cerTextField_" destination="tW6-Hw-Xqg" id="KNg-Qf-lh3"/>
+                <outlet property="createButton_" destination="YQO-Sl-7Wx" id="oNG-fN-YX4"/>
                 <outlet property="destinationPathTextField_" destination="CyZ-SP-iQn" id="s3K-W6-Gfu"/>
                 <outlet property="importPasswordTextField_" destination="sgs-nE-UpM" id="uJt-F3-bGw"/>
                 <outlet property="p12TextField_" destination="pcs-yD-MjV" id="0Xz-85-1nD"/>
