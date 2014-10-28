@@ -58,6 +58,12 @@
 
 - (IBAction)createPEM:(id)sender
 {
+	int opensslAvailable = system(@"which openssl".UTF8String);
+	if (opensslAvailable != 0) {
+		NSBeginAlertSheet(@"Error", @"OK", nil, nil, window_, nil, nil, nil, nil, @"Command not found so please install it.(openssl)");
+		return;
+	}
+
 	NSFileManager *manager = [[NSFileManager alloc] init];
 	NSString *suffix = [suffixTextField_ stringValue];
 	NSString *alertText = nil;
@@ -65,13 +71,13 @@
 		alertText = @"Please input the path of cer file.";
 	}
 	else if ([manager fileExistsAtPath:[cerTextField_ stringValue]] == NO) {
-		alertText = @"cer file not exists.";
+		alertText = @"cer file does not exist.";
 	}
 	else if ([p12TextField_ stringValue].length == 0) {
-		alertText = @"Please input the path of p12 file.";
+		alertText = @"Please input the path to p12 file.";
 	}
 	else if ([manager fileExistsAtPath:[p12TextField_ stringValue]] == NO) {
-		alertText = @"p12 file not exists.";
+		alertText = @"p12 file does not exist.";
 	}
 	else if (suffix.length == 0 || suffix == nil) {
 		alertText = @"Please input your application name.";
@@ -80,10 +86,7 @@
 		alertText = @"Please input the destination directory.";
 	}
 	else if ([manager fileExistsAtPath:[destinationPathTextField_ stringValue]] == NO) {
-		alertText = @"Destination directory not exists.";
-	}
-	else if ([importPasswordTextField_ stringValue].length == 0) {
-		alertText = @"Please input your p12 import password.";
+		alertText = @"Destination directory does not exist.";
 	}
 	else if ([pemPassPhraseTextField_ stringValue].length == 0) {
 		alertText = @"Please input your pem pass phrase.";
@@ -117,7 +120,7 @@
 			}
 		}];
 		if (success) {
-			NSAlert *alert = [NSAlert alertWithMessageText:@"Success" defaultButton:@"OK" alternateButton:nil otherButton:nil informativeTextWithFormat:@"pem file is generated."];
+			NSAlert *alert = [NSAlert alertWithMessageText:@"Success" defaultButton:@"OK" alternateButton:nil otherButton:nil informativeTextWithFormat:@"The pem file is generated successfully."];
 			[alert setAlertStyle:NSInformationalAlertStyle];
 			[alert beginSheetModalForWindow:window_ modalDelegate:nil didEndSelector:nil contextInfo:nil];
 			[[NSWorkspace sharedWorkspace] activateFileViewerSelectingURLs:@[[NSURL fileURLWithPath:[destinationPathTextField_ stringValue]]]];
