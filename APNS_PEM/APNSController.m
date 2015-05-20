@@ -58,6 +58,7 @@
 
 - (IBAction)createPEM:(id)sender
 {
+	NSString *pathToOpenSSL = @"openssl";
 	int opensslAvailable = system(@"which openssl".UTF8String);
 	if (opensslAvailable != 0) {
 		NSBeginAlertSheet(@"Error", @"OK", nil, nil, window_, nil, nil, nil, nil, @"Command not found so please install it.(openssl)");
@@ -100,9 +101,9 @@
 	else {
 		NSInteger index = [popUpButton_ indexOfSelectedItem];
 		NSArray *commands = @[
-							  [NSString stringWithFormat:@"openssl x509 -in %@ -inform der -out aps_cert.pem", [cerTextField_ stringValue]],
-							  [NSString stringWithFormat:@"openssl pkcs12 -nocerts -out aps_key.pem -passout pass:%@ -in %@ -passin pass:%@", [pemPassPhraseTextField_ stringValue], [p12TextField_ stringValue], [importPasswordTextField_ stringValue]],
-							  [NSString stringWithFormat:@"cat aps_cert.pem aps_key.pem > %@/aps_ck_%@_%@.pem", [destinationPathTextField_ stringValue], suffix, @[@"dev", @"prod"][index]],
+							  [NSString stringWithFormat:@"%@ x509 -in %@ -inform der -out aps_cert.pem", pathToOpenSSL, [cerTextField_ stringValue]],
+							  [NSString stringWithFormat:@"%@ pkcs12 -nocerts -out aps_key.pem -passout pass:%@ -in %@ -passin pass:%@", [pemPassPhraseTextField_ stringValue], pathToOpenSSL, [p12TextField_ stringValue], [importPasswordTextField_ stringValue]],
+							  [NSString stringWithFormat:@"cat aps_cert.pem aps_key.pem > %@/aps_ck_%@_%@.pem", [destinationPathTextField_ stringValue], suffix, @[@"development", @"production"][index]],
 							  @"rm aps_cert.pem && rm aps_key.pem"
 							  ];
 		__block BOOL success;
@@ -110,7 +111,7 @@
 			NSString *cmd = obj;
 			int res = system(cmd.UTF8String);
 			if (res != 0) {
-				NSBeginAlertSheet(@"Error", @"OK", nil, nil, window_, nil, nil, nil, nil, @"Could not create pem file.(%ld%d)", idx, res);
+				NSBeginAlertSheet(@"Error", @"OK", nil, nil, window_, nil, nil, nil, nil, @"Could not create pem file.(%ld-%d)", idx, res);
 				system("rm aps_key.pem");
 				*stop = YES;
 				success = NO;
